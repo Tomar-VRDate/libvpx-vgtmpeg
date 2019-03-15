@@ -67,12 +67,14 @@ extern "C" {
 #else
 #ifdef __APPLE__
 #include <mach/mach_init.h>
+
 #include <mach/semaphore.h>
 #include <mach/task.h>
 #include <time.h>
 #include <unistd.h>
 
 #else
+#include <sys/types.h>
 #include <semaphore.h>
 #endif
 
